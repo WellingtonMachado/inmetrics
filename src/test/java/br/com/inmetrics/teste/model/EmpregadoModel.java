@@ -1,17 +1,25 @@
 
 
-import io.swagger.annotations.ApiModel;
+public class EmpregadoModel {
+    private AcessoModel acesso;
+    private String admissao;
+    private String cargo;
+    private String comissao;
+    private String cpf;
+    private DepartamentoModel departamento;
+    private Integer empregadoId;
+    private String nome;
+    private String salario;
+    private String sexo;
+    private String tipoContratacao;
 
-public class EmpregadoDto  {
-   private String admissao;
-   private String cargo;
-   private String comissao;
-   private String cpf;
-   private Integer departamentoId;
-   private String nome;
-   private String salario;
-   private String sexo;
-   private String tipoContratacao;
+    public AcessoModel getAcesso() {
+        return acesso;
+    }
+
+    public void setAcesso(AcessoModel acesso) {
+        this.acesso = acesso;
+    }
 
     public String getAdmissao() {
         return admissao;
@@ -45,12 +53,20 @@ public class EmpregadoDto  {
         this.cpf = cpf;
     }
 
-    public Integer getDepartamentoId() {
-        return departamentoId;
+    public DepartamentoModel getDepartamento() {
+        return departamento;
     }
 
-    public void setDepartamentoId(Integer departamentoId) {
-        this.departamentoId = departamentoId;
+    public void setDepartamento(DepartamentoModel departamento) {
+        this.departamento = departamento;
+    }
+
+    public Integer getEmpregadoId() {
+        return empregadoId;
+    }
+
+    public void setEmpregadoId(Integer empregadoId) {
+        this.empregadoId = empregadoId;
     }
 
     public String getNome() {
